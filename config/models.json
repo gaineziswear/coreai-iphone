@@ -1,0 +1,28 @@
+{
+  "models": [
+    {
+      "id": "coreai-qwen-06b",
+      "name": "Qwen 0.6B Mock",
+      "provider": "test",
+      "capabilities": [
+        "chat",
+        "text_generation",
+        "local"
+      ],
+      "local": true,
+      "enabled": true
+    },
+    {
+      "id": "coreai-qwen3-0.6b",
+      "name": "Qwen3 0.6B",
+      "provider": "apple-coreai",
+      "capabilities": [
+        "chat",
+        "text_generation",
+        "local"
+      ],
+      "local": true,
+      "enabled": true
+    }
+  ]
+}

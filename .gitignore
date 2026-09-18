@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# macOS / Xcode
+.DS_Store
+.build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate/
+
+# Swift Package Manager
+Package.resolved
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# AI model artifacts
+*.aimodel
+models/*.bin
+models/*.safetensors
+models/*.gguf
+models/*.mlmodel
+models/*.mlpackage
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
