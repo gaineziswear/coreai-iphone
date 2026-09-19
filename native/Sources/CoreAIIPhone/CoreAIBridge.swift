@@ -36,7 +36,7 @@ public actor CoreAIBridge {
 
     public func load() async throws {
 
-        guard state != .ready else {
+        if case .ready = state {
             return
         }
 
@@ -59,7 +59,9 @@ public actor CoreAIBridge {
 
     public func respond(to prompt: String) async throws -> String {
 
-        if state != .ready {
+        if case .ready = state {
+            // Already loaded.
+        } else {
             try await load()
         }
 
