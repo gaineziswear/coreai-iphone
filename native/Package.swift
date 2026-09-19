@@ -6,7 +6,6 @@ let package = Package(
     name: "CoreAIIPhone",
     platforms: [
         .iOS("27.0"),
-        .macOS("27.0"),
         .macOS("27.0")
     ],
     products: [
