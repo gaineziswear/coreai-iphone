@@ -60,7 +60,7 @@ public actor CoreAIBridge {
     public func respond(to prompt: String) async throws -> String {
 
         if case .ready = state {
-            // Already loaded.
+            // Runtime is already ready.
         } else {
             try await load()
         }
